@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+*.log
+
+# Local secrets and machine-specific package credentials
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key

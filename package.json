@@ -1,0 +1,32 @@
+{
+  "name": "pi-output-navigation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Keyboard navigation of Pi's fullscreen transcript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hazlam/pi-output-navigation.git"
+  },
+  "bugs": { "url": "https://github.com/hazlam/pi-output-navigation/issues" },
+  "keywords": ["pi-package", "pi-extension"],
+  "pi": { "extensions": ["./src/index.ts"] },
+  "engines": { "node": ">=22.19.0" },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.0",
+    "@earendil-works/pi-tui": "1.5.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
